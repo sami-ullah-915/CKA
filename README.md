@@ -2,7 +2,7 @@
 ## Minikube:
 
 if you want to test something on your local environment or if you want to try something out very quickly for example deploying new application or new components and you want to test it on your local machine obviously setting up a cluster like this will be pretty
-difficult or maybe even impossible if you don't have enough resources like memory and cpu etc and exactly for the use case there's this open source tool that is called a minikube so what a minikube is is basically one node cluster where the master processes and the worker processes both run on one node and this node will have a docker container runtime pre-installed so you will be able to run the containers or the pods with containers on this node
+difficult or maybe even impossible if you don't have enough resources like memory and cpu etc and exactly for the use case there's this open source tool that is called a **minikube** so what a minikube is is basically one node cluster where the master processes and the worker processes both run on one node and this node will have a docker container runtime pre-installed so you will be able to run the containers or the pods with containers on this node
 
 
 ## kubectl:
