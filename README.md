@@ -44,3 +44,22 @@ We're going to create **four** kubernetes configuration files that we need;
 2. We're going to create a secret with username and password for mongodb
 3. And then we're going to create a configuration file for deploying a mongodb application and its service
 4. And then we're going to create kubernetes configuration file for deploying our simple demo app application with its service
+
+Now we have a very simple but also pretty realistic configuration for deploying an application with its database with external configuration in the cluster so as a final step we're just gonna create all these components one by one in kubernetes so open the folder in vscode containing all these files and then open a terminal:
+
+Use these commands to apply all the files respectively in the cluster:
+
+
+`kubectl apply -f mongo-config.yaml`
+`kubectl apply -f mongo-secret.yaml`
+`kubectl apply -f mongo.yaml`
+`kubectl apply -f webapp.yaml`
+
+of course we want to check all the parts and all the components that were created in the cluster so for that i'm going to actually switch to command line so that we can see it better and first we're going to do `kubectl get all` which gives you all the components created in the cluster which includes deployments the pods behind the deployment and all the services and as you see we have deployment and web app deployment parts each one with one replica running and we have the services for mongodb and web app and web app service is of node port type which means we can access it externally.
+
+However we don't see configmap and secret here we can get them using `kubectl get configmap` and `kubectl get secret` commands.
+
+So the final step we want to validate that our application is also accessible from the browser and for that we actually configured the service and we can actually get the service using `kubectl get service` or `svc`.
+
+Use this command to start our webapplication in browser `minikube service webapp-service`
+
