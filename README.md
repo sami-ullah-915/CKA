@@ -40,7 +40,7 @@ Let's go ahead and create all the kubernetes configuration files that we need fo
 
 We're going to create **four** kubernetes configuration files that we need;
 
-1 We're going to create a config map with mongodb database endpoint
-2 We're going to create a secret with username and password for mongodb
-3 And then we're going to create a configuration file for deploying a mongodb application and its service
-4 And then we're going to create kubernetes configuration file for deploying our simple demo app application with its service
+1. We're going to create a config map with mongodb database endpoint
+2. We're going to create a secret with username and password for mongodb
+3. And then we're going to create a configuration file for deploying a mongodb application and its service
+4. And then we're going to create kubernetes configuration file for deploying our simple demo app application with its service
