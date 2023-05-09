@@ -63,3 +63,4 @@ So the final step we want to validate that our application is also accessible fr
 
 Use this command to start our webapplication in browser `minikube service webapp-service`
 
+Now, you can use `minikube dashboard` command to view all your processes in high level GUI demonstration.
