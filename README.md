@@ -2,11 +2,11 @@
 
 ## Prerequisites:
 
-### Recommended:
+### Mandatory:
  - Minikube
  - Docker Desktop
  
- ### Optional:
+ ### Additional:
  - Lens IDE
  - MongoDB Compass
 
