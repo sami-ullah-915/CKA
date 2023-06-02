@@ -1,5 +1,15 @@
 # CKA
 
+## Prerequisites:
+
+### Recommended:
+ - Minikube
+ - Docker Desktop
+ 
+ ### Optional:
+ - Lens IDE
+ - MongoDB Compass
+
 ## Minikube:
 
 if you want to test something on your local environment or if you want to try something out very quickly for example deploying new application or new components and you want to test it on your local machine obviously setting up a cluster like this will be pretty
