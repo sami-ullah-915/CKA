@@ -51,9 +51,13 @@ Use these commands to apply all the files respectively in the cluster:
 
 
 `kubectl apply -f mongo-config.yaml`
+
 `kubectl apply -f mongo-secret.yaml`
+
 `kubectl apply -f mongo.yaml`
+
 `kubectl apply -f webapp.yaml`
+
 
 of course we want to check all the parts and all the components that were created in the cluster so for that i'm going to actually switch to command line so that we can see it better and first we're going to do `kubectl get all` which gives you all the components created in the cluster which includes deployments the pods behind the deployment and all the services and as you see we have deployment and web app deployment parts each one with one replica running and we have the services for mongodb and web app and web app service is of node port type which means we can access it externally.
 
